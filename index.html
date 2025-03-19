@@ -1,16 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <h1>hello world</h1>
-    <p>hello world</p>
-    <p>hello world</p>
-    <p>hello world</p>
-    <p>hello world</p>    
-</body> 
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold">About Me</h1>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8 space-y-12">
+    <!-- Experiences Section -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Experiences</h2>
+      <div class="space-y-8">
+        <!-- Data Engineer -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Data Engineer (student work)</h3>
+          <p class="text-sm text-gray-500">
+            Petrol d.d. &mdash; Ljubljana, SI <span class="ml-2">Jan 2024 - Nov 2024</span>
+          </p>
+          <ul class="list-disc pl-5 mt-3 space-y-1">
+            <li>Conducted MySQL querying and developed PowerBI reports.</li>
+            <li>Utilized Snowflake for creating dimensions and facts to address business requirements.</li>
+            <li>Executed ad hoc deployments and ensured Data Quality (DQ).</li>
+            <li>Leveraged IBM Datastage for developing and running ETL pipelines.</li>
+          </ul>
+        </div>
+        <!-- Researcher in Data Science -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Researcher in Data Science (student work)</h3>
+          <p class="text-sm text-gray-500">
+            Jozef Stefan Institute &mdash; Ljubljana, SI <span class="ml-2">March 2024 - June 2024</span>
+          </p>
+          <ul class="list-disc pl-5 mt-3 space-y-1">
+            <li>Utilized Python with PyTorch for research in geospatial vegetation forecasting.</li>
+            <li>Collaborated on the TEŠ plant contamination spreading forecasting project.</li>
+            <li>Employed Matlab for calculations regarding SO4 contamination data.</li>
+          </ul>
+        </div>
+        <!-- Data Analyst -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Data Analyst - Long term trading (student work)</h3>
+          <p class="text-sm text-gray-500">
+            Holding slovenske elektrarne d.o.o &mdash; Ljubljana, SI <span class="ml-2">Oct 2023 - Feb 2024</span>
+          </p>
+          <ul class="list-disc pl-5 mt-3 space-y-1">
+            <li>Implemented a data pipeline in the ELES app using C# and Python.</li>
+            <li>Automated tasks with Python scripting.</li>
+            <li>Managed databases using MySQL and SQL Server Management Studio.</li>
+            <li>Performed market analysis with Pandas (technical analysis).</li>
+            <li>Wrote VBA code in Excel.</li>
+          </ul>
+        </div>
+        <!-- Software Developer -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Software Developer (internship)</h3>
+          <p class="text-sm text-gray-500">
+            Business Solutions d.o.o &mdash; Nova Gorica, SI <span class="ml-2">Jul 2023 - Oct 2023</span>
+          </p>
+          <ul class="list-disc pl-5 mt-3 space-y-1">
+            <li>Crafted a mobile application for delivery services.</li>
+            <li>Oversaw both front-end and back-end development.</li>
+            <li>Utilized technologies including C#, Flutter, Bloc library, REST APIs, and Xamarin.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center">
+          <span class="text-lg font-medium">Data Analysis</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center">
+          <span class="text-lg font-medium">AI Chat Integration</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center">
+          <span class="text-lg font-medium">LLM Fine Tuning</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow flex items-center justify-center">
+          <span class="text-lg font-medium">RAG</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Language Proficiency Section -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Language Proficiency</h2>
+      <div class="space-y-6">
+        <!-- Python -->
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-medium">Python</span>
+            <span>5/5</span>
+          </div>
+          <div class="flex mt-2 rating-stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <!-- MySQL -->
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-medium">MySQL</span>
+            <span>5/5</span>
+          </div>
+          <div class="flex mt-2 rating-stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <!-- Javascript -->
+        <div>
+          <div class="flex items-center justify-between">
+            <span class="font-medium">Javascript</span>
+            <span>3/5</span>
+          </div>
+          <div class="flex mt-2 rating-stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star empty">&#9734;</span>
+            <span class="star empty">&#9734;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-12 shadow py-4">
+    <div class="max-w-7xl mx-auto text-center text-gray-500">
+      &copy; 2024 Your Name. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Link to custom JS -->
+  <script src="script.js"></script>
+</body>
 </html>
